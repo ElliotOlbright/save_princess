@@ -1,5 +1,6 @@
 class Grid 
   attr_reader :grid,
+              :grid_size
 
   def initialize(grid_size, grid)
 
