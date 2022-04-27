@@ -1,5 +1,5 @@
 require 'spec_helper'
-require '../lib/grid/'
+require_relative '../lib/grid/'
 
 describe Grid do
   it 'should instantiate with correct grid size' do
