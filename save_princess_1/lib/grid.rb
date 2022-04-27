@@ -6,6 +6,8 @@ class Grid
 
   def initialize(grid_size, grid)
     raise ArgumentError, "Please enter a valid integer" unless grid_size < 100 && grid_size > 2
+    raise ArgumentError, "Please make sure your grid size and grid match" unless grid_size == grid.count
+
     @grid = grid
     @grid_size = grid_size
     @bot = locate_bot
