@@ -27,3 +27,11 @@ describe Grid do
   end
 end 
 
+describe 'sadpath' do
+  it 'returns an error if grid_size above 100' do
+    expect {Grid.new(500, ["m--", "-p-", "---"])}.to raise_error(ArgumentError)
+    expect {Grid.new(2, ["m--", "-p-", "---"])}.to raise_error(ArgumentError)
+    expect {Grid.new(3, ["m--", "-p-", "---"])}.not_to raise_error
+  end
+end
+

@@ -6,7 +6,7 @@ class Grid
               :princess
 
   def initialize(grid_size, grid)
-
+    raise ArgumentError, "Please enter a valid integer" unless grid_size < 100 && grid_size > 2
     @grid = grid
     @grid_size = grid_size
     @bot_row = (grid_size - 1) / 2
