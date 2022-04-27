@@ -24,5 +24,10 @@ describe Bot do
   end
 
   it 'can show coordinates for princess' do
+    grid = Grid.new(4, ["----","--m-", "----", "---p"])
+    bot = Bot.new(grid)
+
+    expect(bot.princess_x).to eq(3)
+    expect(bot.princess_y).to eq(3)
   end 
 end 
