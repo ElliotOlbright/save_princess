@@ -17,7 +17,7 @@ describe Findprincess do
     @path4 = Findprincess.new(@grid4)
   end 
 
-  it 'is an instance of Path2princess and has attributes' do
+  it 'is an instance of Findprincess and has attributes' do
     expect(@path1).to be_a Findprincess
   end
 
