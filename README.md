@@ -87,9 +87,9 @@ open coverage/index.html
   * This class has 3 methods methods 
     1. `generate_row_path` - Is responsible for determining the moves needed on the x axis and outputting "left" or Right"
       * **note** - This method finds the distance between the princess and bot on the x axis, depending on the negative or positive value of the distance the method will out put "left" or "right"
-    3. `generate_column_path` -  Is responsible for determining the moves needed on the y axis and outputting "up" or "down"
+    2. `generate_column_path` -  Is responsible for determining the moves needed on the y axis and outputting "up" or "down"
       * **note** - This method finds the distance between the princess and bot on the y axis, depending on the negative or positive value of the distance the method will out put "up" or "down"
-    5. `path_to_princess` - Is responsible for collecting the outputs of the previous two methods until the princess is reached
+    3. `path_to_princess` - Is responsible for collecting the outputs of the previous two methods until the princess is reached
 
 ---
 
