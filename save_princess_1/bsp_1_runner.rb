@@ -15,7 +15,10 @@ matrix = Grid.new(grid_size, grid)
 
 save_princess = Findprincess.new(matrix)
 
-save_princess.path_to_princess.each do |movement|
-  puts movement
+save_princess.path_to_princess.each do |m|
+  puts m
 end
+
+
+
 
