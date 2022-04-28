@@ -2,7 +2,7 @@ class Grid
   attr_reader :grid_size, 
               :grid
 
-  def initialize(grid_size, grid)
+  def initialize(grid)
 
     @grid_size = grid_size
     @grid = grid
