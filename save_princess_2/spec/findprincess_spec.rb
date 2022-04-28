@@ -5,13 +5,12 @@ require_relative '../lib/grid'
 
 describe Findprincess do
   before :each do
-    @path = Findprincess.new(5, 2, 3, ["-----\n", "-----\n", "p--m--\n", "-----\n", "-----\n"])
-    @path2 = Findprincess.new(5, 2, 3, ["-----\n", "-----\n", "---mp-\n", "-----\n", "-----\n"])
-    @path3 = Findprincess.new(5, 2, 3, ["--p--\n", "-----\n", "---m--\n", "-----\n", "-----\n"])
-    @path4 = Findprincess.new(5, 2, 3, ["-----\n", "-----\n", "---m--\n", "-----\n", "--p--\n"])
-    @path5 = Findprincess.new(5, 2, 3, ["-----\n", "-----\n", "---m--\n", "-----\n", "p----\n"])
-    @path6 = Findprincess.new(5, 2, 3, ["----p\n", "-----\n", "---m--\n", "-----\n", "-----\n"])
-
+    @path = Findprincess.new(5, 2, 3, ["-----\n", "-----\n", "p--m-\n", "-----\n", "-----\n"])
+    @path2 = Findprincess.new(5, 2, 3, ["-----\n", "-----\n", "---mp\n", "-----\n", "-----\n"])
+    @path3 = Findprincess.new(5, 2, 3, ["--p--\n", "-----\n", "---m-\n", "-----\n", "-----\n"])
+    @path4 = Findprincess.new(5, 2, 3, ["-----\n", "-----\n", "---m-\n", "-----\n", "--p--\n"])
+    @path5 = Findprincess.new(5, 2, 3, ["-----\n", "-----\n", "---m-\n", "-----\n", "p----\n"])
+    @path6 = Findprincess.new(5, 2, 3, ["----p\n", "-----\n", "---m-\n", "-----\n", "-----\n"])
   end
 
   it 'can create an instance of Findprincess' do
