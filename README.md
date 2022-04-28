@@ -52,14 +52,30 @@ open coverage/index.html
 ---
 
 ## Challenge 1 Approach
-#### 1. Grid
+### 1. Grid
   * The first part of the problem that needed to be solved was the functionality of and the constraints of the grid. 
     * The grid would be responsible for the placement of both the bot and the princess. In part one the princess was guaranteed to be in one of the 4 corners of the grid and the bot was guaranteed to be in the center of the grid. 
     * The Grid x axis was restricted to a range of 3-100
     * The Grid can only be an even number
   * Upon instantiation the grid will check the users input to ensure the user input follows the requirements
-  * 'locate_princess' will find the princess coordinates on the grid
-  * 'locate_bot` will find the bot coordinates on the grid
+  * `locate_princess` will find the princess coordinates on the grid
+  * `locate_bot` will find the bot coordinates on the grid
+
+### 2. Bot
+  * The bot class is soley responsible for dividing the assigning the x and y coordinates to seperate variables
+  * This class is instantiated using the grid class
+
+### 3. Princess
+  * The princess class is soley responsible for dividing the assigning the x and y coordinates to seperate variables
+  * this class is instantiated using the grid class
+
+### 4. FindPrincess
+  * This class combines grid, bot and princess to create and output the final result of the steps need for the bot to save the princess
+  * This class has 3 methods methods 
+    1. `horizontal_movement` - Is responsible for determining the moves needed on the x axis and outputting "left" or Right"
+    2. `vertical_movement` -  Is responsible for determining the moves needed on the y axis and outputting "up" or "down"
+    3. `path_to_princess` - Is responsible for collecting the outputs of the previous two methods until the princess is reached
+
 
 
 
