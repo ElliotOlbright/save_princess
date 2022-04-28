@@ -76,8 +76,23 @@ open coverage/index.html
     2. `vertical_movement` -  Is responsible for determining the moves needed on the y axis and outputting "up" or "down"
     3. `path_to_princess` - Is responsible for collecting the outputs of the previous two methods until the princess is reached
 
+---
 
+## Challenge 2 Approach
 
+### 1. Grid
+  * This class is responsible for instantiating the grid as well as locating the bot and princess
+  * This class remianed fairly simlir to part one. Though sincewe had been given the coordinates of the bot in the argument for the displayPathToPrincess method, I was able to delete the `locate_bot` method and only keep the `locate_princess` method.
+  * Since I had found the princess and bot location, I no longer need the bot and princess classes
+
+### 4. FindPrincess
+  * This class remained fairly similar to part one.
+  * Since we no longer need to have a collection of each move in an array but rather just show the next move, I was able to delete `path_to_princess`
+  * The main difference was adding the `next_step` method.
+  * This class has 3 methods methods 
+    1. `horizantal_movement` - Is responsible for determining the moves needed on the x axis and outputting "left" or Right"
+    2. `vertical_movement` -  Is responsible for determining the moves needed on the y axis and outputting "up" or "down"
+    3. `next_step` - Is responsible for collecting the output of the movement methods and displaying
 
 
 
