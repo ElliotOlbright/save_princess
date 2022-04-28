@@ -5,7 +5,7 @@ class Grid
               :princess_y
 
   def initialize(grid)
-    @grid_size = grid_size
+    @grid_size = grid.count
     @grid = grid
     @princess_x = locate_princess[0]
     @princess_y = locate_princess[1]
