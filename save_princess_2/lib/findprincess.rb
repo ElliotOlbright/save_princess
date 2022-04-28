@@ -10,15 +10,15 @@ class Findprincess
 
   def initialize(n, row, column, grid)
     @grid = Grid.new(grid)
-    @bot_y = column
-    @bot_x = row
+    @bot_x = column
+    @bot_y = row
     @princess_x = @grid.princess_x
     @princess_y = @grid.princess_y
     @step = []
   end
 
   def next_step
-    if (@bot_x == @princess_y)
+    if (@bot_y == @princess_y)
       horizontal_movement
     else 
       vertical_movement
