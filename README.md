@@ -16,7 +16,7 @@
 - [Submission](#submission)
 - [Install Locally](#install-locally-to-your-machine)
 - [Testing and Coverage](#testing-and-coverage)
-- [Challenge 1](#challenge-1-thought-process)
+- [Challenge 1](#challenge-1)
 
 ---
 
