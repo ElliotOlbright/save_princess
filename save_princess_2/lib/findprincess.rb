@@ -37,12 +37,22 @@ class Findprincess
   end
 
   def vertical_movement
-    if @bot_y > @princess_y
-      @bot_y -= 1
-      @step << 'UP'
-    elsif @bot_y < @princess_y
-      @bot_y += 1
-      @step << 'DOWN'
+    if @bot_x == @princess_x
+      if @bot_y > @princess_y
+        @bot_y -= 1
+        @step << 'UP'
+      elsif @bot_y < @princess_y
+        @bot_y += 1
+        @step << 'DOWN'
+      end
+    else
+      if @bot_y > @princess_y
+        @bot_y -= 1
+        @step << 'UP'
+      elsif @bot_y < @princess_y
+        @bot_y += 1
+        @step << 'DOWN'
+      end
     end
   end
 end

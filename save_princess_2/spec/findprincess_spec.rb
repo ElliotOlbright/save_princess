@@ -9,11 +9,8 @@ describe Findprincess do
     @path2 = Findprincess.new(5, 2, 3, ["-----\n", "-----\n", "---mp-\n", "-----\n", "-----\n"])
     @path3 = Findprincess.new(5, 2, 3, ["--p--\n", "-----\n", "---m--\n", "-----\n", "-----\n"])
     @path4 = Findprincess.new(5, 2, 3, ["-----\n", "-----\n", "---m--\n", "-----\n", "--p--\n"])
-    @path5 = Findprincess.new(5, 2, 3, ["-----\n", "-----\n", "---m--\n", "----p\n", "-----\n"])
-
-
-
-
+    @path5 = Findprincess.new(5, 2, 3, ["-----\n", "-----\n", "---m--\n", "-----\n", "p----\n"])
+    @path6 = Findprincess.new(5, 2, 3, ["----p\n", "-----\n", "---m--\n", "-----\n", "-----\n"])
   end
 
   it 'can create an instance of Findprincess' do
@@ -47,9 +44,15 @@ describe Findprincess do
     expect(@path4.step).to eq(["DOWN"])
   end
 
-  it 'should move horizantally on different column' do
+  it 'should move down on different column and row' do
     @path5.next_step
 
-    expect(@path5.step).to eq(["RIGHT"])
+    expect(@path5.step).to eq(["DOWN"])
+  end
+
+  it 'should move up on different column and row' do
+    @path6.next_step
+
+    expect(@path6.step).to eq(["UP"])
   end
 end 
