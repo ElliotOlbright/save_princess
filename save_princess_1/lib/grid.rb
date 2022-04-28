@@ -18,8 +18,9 @@ class Grid
     princess_coords = []
     @grid.any? do |s|
       if s.include?("p")
-        princess_coords << @grid.find_index(s)
         princess_coords << s.index('p')
+        princess_coords << @grid.find_index(s)
+
       end
     end
     princess_coords
@@ -29,8 +30,8 @@ class Grid
     bot_coords = []
     @grid.any? do |s|
       if s.include?("m")
-        bot_coords << @grid.find_index(s)
         bot_coords << s.index('m')
+        bot_coords << @grid.find_index(s)
       end
     end
     bot_coords
