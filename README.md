@@ -17,7 +17,7 @@
 - [Install Locally](#install-locally-to-your-machine)
 - [Testing and Coverage](#testing-and-coverage)
 - [Tools](#tools-used)
-- [Challenge 1](#challenge-1)
+- [Challenge 1 Approach](#challenge-1)
 
 ---
 
@@ -51,7 +51,18 @@ open coverage/index.html
 
 ---
 
-## Challenge 1
-### Here is my thought process behind challenge one
+## Challenge 1 Approach
+#### 1. Grid
+  * The first part of the problem that needed to be solved was the functionality of and the constraints of the grid. 
+    * The grid would be responsible for the placement of both the bot and the princess. In part one the princess was guaranteed to be in one of the 4 corners of the grid and the bot was guaranteed to be in the center of the grid. 
+    * The Grid x axis was restricted to a range of 3-100
+    * The Grid can only be an even number
+  * Upon instantiation the grid will check the users input to ensure the user input follows the requirements
+  * 'locate_princess' will find the princess coordinates on the grid
+  * 'locate_bot` will find the bot coordinates on the grid
+
+
+
+
 
 
