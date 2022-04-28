@@ -16,9 +16,4 @@ describe Princess do
     expect(@princess.princess_x ).to eq(0)
     expect(@princess.princess_y ).to eq(2)
   end
-
-  it 'can find bot coordinates' do
-    expect(@princess.bot_x ).to eq(1)
-    expect(@princess.bot_y ).to eq(1)
-  end
 end 
