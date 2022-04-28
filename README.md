@@ -16,6 +16,9 @@
 - [Submission](#submission)
 - [Install Locally](#install-locally-to-your-machine)
 - [Testing and Coverage](#testing-and-coverage)
+- [Challenge 1](#challenge-1-thought-process)
+
+---
 
 ### Install Locally To Your Machine
   * In command line run:
@@ -38,3 +41,8 @@ rspec ./save_princess_1/spec
 open coverage/index.html
 ```
 ---
+
+## Challenge 1
+### Here is my thought process behind challenge one
+
+
