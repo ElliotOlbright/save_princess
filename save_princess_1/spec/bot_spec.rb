@@ -15,9 +15,4 @@ describe Bot do
     expect(@bot.bot_x).to eq(1)
     expect(@bot.bot_y).to eq(1)
   end
-
-  it 'can show coordinates for princess' do
-    expect(@bot.princess_x).to eq(2)
-    expect(@bot.princess_y).to eq(0)
-  end 
 end 
