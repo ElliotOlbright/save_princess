@@ -38,5 +38,10 @@ describe 'Grid Sadpath' do
     expect {Grid.new(3, ["m---", "-p--", "----", "----"])}.to raise_error(ArgumentError)
     expect {Grid.new(3, ["m--", "p--", "---"])}.not_to raise_error
   end 
+
+  it 'returns error if grid_size is even' do
+    expect {Grid.new(2, ["m---", "-p--", "----", "----"])}.to raise_error(ArgumentError)
+    expect {Grid.new(3, ["m--", "p--", "---"])}.not_to raise_error
+  end 
 end
 
