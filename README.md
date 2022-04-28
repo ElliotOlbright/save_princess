@@ -2,11 +2,12 @@
 ### Here is my submission to the HFA's technical challenge.
 
 ### Table of Contents
+- [Submission](#submission)
 - [Install Locally](#install-locally-to-your-machine)
 - [Testing and Coverage](#testing-and-coverage)
 
 ---
-
+### Submission
 #### 1. Run the **FIRST** challenge in HackerRank
   * Please visit [Bot Saves Princess 1](https://www.hackerrank.com/challenges/saveprincess/problem)
   * Upload or copy/paste the contents of [bsp_1_HR_runner](https://github.com/ElliotOlbright/save_princess/blob/main/bsp_1_HR_runner.rb)
