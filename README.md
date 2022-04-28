@@ -8,6 +8,7 @@
 #### 2. Run the **SECOND** challenge in HackerRank
   * Please visit [Bot Saves Princess 2](https://www.hackerrank.com/challenges/saveprincess2)
   * Upload or copy/paste the contents of [bsp_2_HR_runner](https://github.com/ElliotOlbright/save_princess/blob/main/bsp_2_HR_runner.rb)
+---
 
 ### Install Locally To Your Machine
   * In command line run:
@@ -16,6 +17,7 @@ git clone git@github.com:elliotolbright/save_princess.git
 cd save_princess
 bundle install
 ```
+---
 ### Testing and Coverage
 1. Run RSpec test suite
   * In command line run:
@@ -28,3 +30,4 @@ rspec ./save_princess_1/spec
 ```
 open coverage/index.html
 ```
+---
