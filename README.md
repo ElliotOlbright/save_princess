@@ -15,6 +15,7 @@
 ### Table of Contents
 - [Submission](#submission)
 - [Install Locally](#install-locally-to-your-machine)
+- [Play Game](#play-game)
 - [Testing and Coverage](#testing-and-coverage)
 - [Tools](#tools-used)
 - [Challenge 1 Approach](#challenge-1-approach)
@@ -30,6 +31,17 @@ cd save_princess
 bundle install
 ```
 ---
+### Play Game
+  * For part 1, in command line run: (make sure to follow directions!)
+```
+ruby save_princess_1/bsp_1_runner.rb
+```
+  * For part 2, in command line run: (make sure to follow directions!)
+```
+ruby save_princess_2/bsp_2_runner.rb
+```
+
+
 ### Testing and Coverage
 1. Run RSpec test suite
   * In command line run:
