@@ -17,6 +17,15 @@ describe Grid do
   end 
 
   it 'can find the princess' do 
-    expect(@grid.find_princess).to eq([2,0])
+    expect(@grid.locate_princess).to eq([0,2])
   end 
+
+  it 'can find princess x coordinate' do 
+    expect(@grid.princess_x).to eq(0)
+  end 
+
+  it 'can find princess y coordinate' do 
+    expect(@grid.princess_y).to eq(2)
+  end
+
 end 
