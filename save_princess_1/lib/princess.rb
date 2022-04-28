@@ -1,3 +1,4 @@
+
 class Princess 
   attr_reader :princess_x,
               :princess_y,
