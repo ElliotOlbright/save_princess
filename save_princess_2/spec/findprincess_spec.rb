@@ -5,7 +5,15 @@ require_relative '../lib/grid'
 
 describe Findprincess do
   before :each do
-    @path = Findprincess.new(5, 2, 3, ["-----\n", "-----\n", "p--m-\n", "-----\n", "-----\n"])
+    @path = Findprincess.new(5, 2, 3, ["-----\n", "-----\n", "p--m--\n", "-----\n", "-----\n"])
+    @path2 = Findprincess.new(5, 2, 3, ["-----\n", "-----\n", "---mp-\n", "-----\n", "-----\n"])
+    @path3 = Findprincess.new(5, 2, 3, ["--p--\n", "-----\n", "---m--\n", "-----\n", "-----\n"])
+    @path4 = Findprincess.new(5, 2, 3, ["-----\n", "-----\n", "---m--\n", "-----\n", "--p--\n"])
+    @path5 = Findprincess.new(5, 2, 3, ["-----\n", "-----\n", "---m--\n", "----p\n", "-----\n"])
+
+
+
+
   end
 
   it 'can create an instance of Findprincess' do
@@ -19,6 +27,29 @@ describe Findprincess do
     expect(@path.bot_y).to eq(3)
     expect(@path.princess_x).to eq(0)
     expect(@path.princess_y).to eq(2)
-
   end 
+
+  it 'should move left on same row' do
+    @path.next_step
+
+    expect(@path.step).to eq(["LEFT"])
+  end
+
+  it 'should move right on same row' do
+    @path2.next_step
+
+    expect(@path2.step).to eq(["RIGHT"])
+  end
+
+  it 'should move down on same column' do
+    @path4.next_step
+
+    expect(@path4.step).to eq(["DOWN"])
+  end
+
+  it 'should move horizantally on different column' do
+    @path5.next_step
+
+    expect(@path5.step).to eq(["RIGHT"])
+  end
 end 
