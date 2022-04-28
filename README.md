@@ -16,6 +16,7 @@
 - [Submission](#submission)
 - [Install Locally](#install-locally-to-your-machine)
 - [Testing and Coverage](#testing-and-coverage)
+- [Tools](#tools-used)
 - [Challenge 1](#challenge-1)
 
 ---
@@ -40,6 +41,14 @@ rspec ./save_princess_1/spec
 ```
 open coverage/index.html
 ```
+---
+
+## Tools Used
+
+- [RSpec Gem](https://rspec.info/) to test my code.
+- [Pry Gem](https://github.com/pry/pry) to debug.
+- [SimpleCov Gem](https://github.com/simplecov-ruby/simplecov) to check that all of my code was tested.
+
 ---
 
 ## Challenge 1
