@@ -29,50 +29,34 @@ describe Findprincess do
   end 
 
   it 'should move left on same row' do
-    @path.next_step
-
-    expect(@path.step).to eq(["LEFT"])
+    expect(@path.next_step).to eq(["LEFT"])
   end
 
   it 'should move right on same row' do
-    @path2.next_step
-
-    expect(@path2.step).to eq(["RIGHT"])
+    expect(@path2.next_step).to eq(["RIGHT"])
   end
 
   it 'should move down on same column' do
-    @path4.next_step
-
-    expect(@path4.step).to eq(["DOWN"])
+    expect(@path4.next_step).to eq(["DOWN"])
   end
 
   it 'should move up on same column' do
-    @path3.next_step
-
-    expect(@path3.step).to eq(["UP"])
+    expect(@path3.next_step).to eq(["UP"])
   end
 
   it 'should move down on different column and row' do
-    @path5.next_step
-
-    expect(@path5.step).to eq(["DOWN"])
+    expect(@path5.next_step).to eq(["DOWN"])
   end
 
   it 'should move up on different column and row' do
-    @path6.next_step
-
-    expect(@path6.step).to eq(["UP"])
+    expect(@path6.next_step).to eq(["UP"])
   end
 
   it 'should move up on same column and different row' do
-    @path7.next_step
-
-    expect(@path7.step).to eq(["UP"])
+    expect(@path7.next_step).to eq(["UP"])
   end
 
   it 'should move down on same column and different row' do
-    @path8.next_step
-
-    expect(@path8.step).to eq(["DOWN"])
+    expect(@path8.next_step).to eq(["DOWN"])
   end
 end 

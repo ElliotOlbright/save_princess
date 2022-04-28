@@ -14,45 +14,20 @@ class Findprincess
     @bot_y = row
     @princess_x = @grid.princess_x
     @princess_y = @grid.princess_y
-    @step = []
   end
 
   def next_step
-    if (@bot_y == @princess_y)
-      horizontal_movement
-    else 
-      vertical_movement
-    end
-    puts @step
+    puts [generate_row_move || generate_column_move]
   end
 
-  def horizontal_movement
-    if @bot_x > @princess_x
-      @bot_x -= 1
-      @step << 'LEFT'
-    elsif @bot_x < @princess_x
-      @bot_x += 1
-      @step << 'RIGHT'
-    end
+  def generate_column_move
+    column_diff = @princess_x - @bot_x
+    (column_diff.negative? ? 'LEFT' : 'RIGHT') if !column_diff.zero?
   end
-
-  def vertical_movement
-    if @bot_x == @princess_x
-      if @bot_y > @princess_y
-        @bot_y -= 1
-        @step << 'UP'
-      elsif @bot_y < @princess_y
-        @bot_y += 1
-        @step << 'DOWN'
-      end
-    else
-      if @bot_y > @princess_y
-        @bot_y -= 1
-        @step << 'UP'
-      elsif @bot_y < @princess_y
-        @bot_y += 1
-        @step << 'DOWN'
-      end
-    end
-  end
+  
+  def generate_row_move
+    row_diff = @princess_y - @bot_y
+    (row_diff.negative? ? 'UP' : 'DOWN') if !row_diff.zero?
+  end 
 end
+

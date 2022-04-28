@@ -18,29 +18,16 @@ class Findprincess
   end
 
   def path_to_princess
-    moves_to_princess = []
-    moves_to_princess << vertical_movement until @bot_y == @princess_y
-    moves_to_princess << horizontal_movement until @bot_x == @princess_x
-    moves_to_princess
+    [generate_row_path, generate_column_path]
   end
 
-  def horizontal_movement
-    if @bot_x > @princess_x
-      @bot_x -= 1
-      'LEFT'
-    elsif @bot_x < @princess_x
-      @bot_x += 1
-      'RIGHT'
-    end
+  def generate_column_path
+    column_diff = @princess_x - @bot_x
+    column_diff.negative? ? 'LEFT' * column_diff.abs : 'RIGHT' * column_diff
   end
-
-  def vertical_movement
-    if @bot_y > @princess_y
-      @bot_y -= 1
-      'UP'
-    elsif @bot_y < @princess_y
-      @bot_y += 1
-      'DOWN'
-    end
-  end
+  
+  def generate_row_path
+    row_diff = @princess_y - @bot_y
+    row_diff.negative? ? 'UP' * row_diff.abs : 'DOWN' * row_diff
+  end 
 end
