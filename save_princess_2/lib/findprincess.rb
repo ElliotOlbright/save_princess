@@ -1,12 +1,12 @@
 require_relative 'grid'
 
 class Findprincess
-  attr_accessor :grid,
+  attr_reader :grid,
                 :bot_x,
                 :bot_y,
                 :princess_x,
-                :princess_y
-  attr_reader   :grid, :bot
+                :princess_y,
+                :step
 
   def initialize(n, row, column, grid)
     @grid = Grid.new(grid)
@@ -14,32 +14,35 @@ class Findprincess
     @bot_x = row
     @princess_x = @grid.princess_x
     @princess_y = @grid.princess_y
+    @step = []
   end
 
-  def path_to_princess
-    moves_to_princess = []
-    moves_to_princess << vertical_movement until @bot_y == @princess_y
-    moves_to_princess << horizontal_movement until @bot_x == @princess_x
-    moves_to_princess
+  def next_step
+    if (@bot_x == @princess_y)
+      horizontal_movement
+    else 
+      vertical_movement
+    end
+    puts @step
   end
 
   def horizontal_movement
     if @bot_x > @princess_x
       @bot_x -= 1
-      'LEFT'
+      @step << 'LEFT'
     elsif @bot_x < @princess_x
       @bot_x += 1
-      'RIGHT'
+      @step << 'RIGHT'
     end
   end
 
   def vertical_movement
     if @bot_y > @princess_y
       @bot_y -= 1
-      'UP'
+      @step << 'UP'
     elsif @bot_y < @princess_y
       @bot_y += 1
-      'DOWN'
+      @step << 'DOWN'
     end
   end
 end
