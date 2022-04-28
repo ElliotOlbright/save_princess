@@ -1,3 +1,4 @@
+require_relative 'grid'
 
 class Princess 
   attr_reader :princess_x,
