@@ -103,7 +103,7 @@ end
 
 def displayPathtoPrincess(n,grid)
   matrix = Grid.new(n, grid)
-  save_princess = SavePrincess.new(matrix)
+  save_princess = Findprincess.new(matrix)
 
   save_princess.path_to_princess.each do |movement|
     puts movement
