@@ -20,8 +20,8 @@ describe Findprincess do
 
   it 'has attributes' do
     expect(@path.grid.grid_size).to eq(5)
-    expect(@path.bot_x).to eq(2)
-    expect(@path.bot_y).to eq(3)
+    expect(@path.bot_x).to eq(3)
+    expect(@path.bot_y).to eq(2)
     expect(@path.princess_x).to eq(0)
     expect(@path.princess_y).to eq(2)
   end 
