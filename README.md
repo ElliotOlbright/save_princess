@@ -17,7 +17,8 @@
 - [Install Locally](#install-locally-to-your-machine)
 - [Testing and Coverage](#testing-and-coverage)
 - [Tools](#tools-used)
-- [Challenge 1 Approach](#challenge-1)
+- [Challenge 1 Approach](#challenge-1-approach)
+- [Challenge 2 Approach](#challenge-2-approach)
 
 ---
 
